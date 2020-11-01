@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "novel-reader",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "An app for reading novels",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/faheemiq/Novel-Reader",
   "keywords": [
     "Electron",
     "quick",
