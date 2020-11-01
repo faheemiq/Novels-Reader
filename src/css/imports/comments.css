@@ -1,0 +1,25 @@
+.comment img {
+  width: 70px;
+}
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+.children_wrapper {
+  width: 100%;
+  padding-left: 90px;
+  margin-top: 20px;
+}
+.comments_wrapper > .comment {
+  border-bottom: 1px solid #fff;
+}
+.comment h3 {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+.comment_content {
+  width: calc(100% - 90px);
+  padding-left: 20px;
+}

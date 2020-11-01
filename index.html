@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <div class="chapter">
+      <div class="nav nav_chapter">
+        <button class="prev" onclick="prevChapter();prevComment();"><img src="https://www.wuxiaworld.com//images/arrow-left.png" /></button>
+        <div class="title_wrapper">
+          <p class="title">Chapter Title</p>
+          <h4 class="title_chapter">Chapter Title</h4>
+        </div>
+        <button class="next" onclick="nextChapter();nextComment();"><img src="https://www.wuxiaworld.com//images/arrow-right.png" /></button>
+      </div>
+      <div class="chapter_text">
+        <div class="chapter_text_wrapper"></div>
+        <div class="loader hide">
+          <div class="loadingio-spinner-bean-eater">
+            <div class="ldio">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav nav_comments">
+        <button class="prev" onclick="prevChapter();prevComment();"><img src="https://www.wuxiaworld.com//images/arrow-left.png" /></button>
+        <div class="title_wrapper">
+          <p class="title">Comments Title</p>
+          <h4 class="title_comments">Comments Title</h4>
+        </div>
+        <button class="next" onclick="nextChapter();nextComment();"><img src="https://www.wuxiaworld.com//images/arrow-right.png" /></button>
+      </div>
+      <div class="chapter_comments">
+        <div class="chapter_comments_wrapper"></div>
+        <div class="loader hide">
+          <div class="loadingio-spinner-bean-eater">
+            <div class="ldio">
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_input">
+      <div class="input_chapter">
+        <p>Chapter Link</p>
+        <input />
+        <button onclick="getChapter(document.querySelector('.input_chapter input').value)">Ok</button>
+      </div>
+      <div class="input_comment">
+        <p>Comment Link</p>
+        <input />
+        <button onclick="getComment(document.querySelector('.input_comment input').value)">Ok</button>
+      </div>
+      <div class="temporary"></div>
+    </div>
+    <script src="./src/components/index.js"></script>
   </body>
 </html>

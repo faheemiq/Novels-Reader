@@ -1,0 +1,108 @@
+@keyframes ldio-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ldio-2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.ldio > div:nth-child(2) {
+  transform: translate(-15px, 0);
+}
+.ldio > div:nth-child(2) div {
+  position: absolute;
+  top: 20.8px;
+  left: 20.8px;
+  width: 62.400000000000006px;
+  height: 31.200000000000003px;
+  border-radius: 62.400000000000006px 62.400000000000006px 0 0;
+  background: #000000;
+  animation: ldio-1 1s linear infinite;
+  transform-origin: 31.200000000000003px 31.200000000000003px;
+}
+.ldio > div:nth-child(2) div:nth-child(2) {
+  animation: ldio-2 1s linear infinite;
+}
+.ldio > div:nth-child(2) div:nth-child(3) {
+  transform: rotate(-90deg);
+  animation: none;
+}
+@keyframes ldio-3 {
+  0% {
+    transform: translate(98.8px, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(36.4px, 0);
+    opacity: 1;
+  }
+}
+.ldio > div:nth-child(1) {
+  display: block;
+}
+.ldio > div:nth-child(1) div {
+  position: absolute;
+  top: 47.84px;
+  left: -4.16px;
+  width: 8.32px;
+  height: 8.32px;
+  border-radius: 50%;
+  background: #fff;
+  animation: ldio-3 1s linear infinite;
+}
+.ldio > div:nth-child(1) div:nth-child(1) {
+  animation-delay: -0.67s;
+}
+.ldio > div:nth-child(1) div:nth-child(2) {
+  animation-delay: -0.33s;
+}
+.ldio > div:nth-child(1) div:nth-child(3) {
+  animation-delay: 0s;
+}
+.loadingio-spinner-bean-eater {
+  width: 104px;
+  height: 104px;
+  left: 50%;
+  position: absolute;
+  top: 290px;
+  overflow: hidden;
+}
+.ldio {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio div {
+  box-sizing: content-box;
+}
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #252525de;
+}
+.loader.hide {
+  display: none;
+}

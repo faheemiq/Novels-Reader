@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #464852;
+  color: #ccc;
+}
+p {
+  margin-top: 0;
+}
+p,
+a {
+  word-break: break-word;
+}
+a {
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background: #202124;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}

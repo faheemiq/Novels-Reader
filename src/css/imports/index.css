@@ -1,0 +1,81 @@
+.input_chapter p,
+.input_comment p {
+  margin-bottom: 0;
+  padding-right: 15px;
+}
+.input_chapter,
+.input_comment {
+  display: flex;
+}
+.input_chapter button,
+.input_comment button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5b5b5b;
+}
+.nav button {
+  padding: 20px 50px;
+  border: 0;
+  border-radius: 0;
+  background-color: #5b5b5b;
+  color: #fff;
+  cursor: pointer;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Open Sans";
+}
+.chapter {
+  flex: 1;
+  max-width: 1100px;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.section_input {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+}
+.chapter_text_wrapper > div {
+  display: none;
+}
+.chapter_text_wrapper,
+.chapter_comments_wrapper {
+  min-height: 500px;
+}
+.chapter_text,
+.chapter_comments {
+  background: #202124;
+  padding: 15px;
+  position: relative;
+}
+.nav button.next {
+  border-left: 2px solid;
+}
+.nav button.prev {
+  border-right: 2px solid #fff;
+}
+.title {
+  margin: 0;
+  font-size: 15px;
+}
+.title_wrapper {
+  text-align: center;
+}
+.title_chapter,
+.title_comments {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
