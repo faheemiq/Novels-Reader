@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (localStorage["chapterLink"].length != 0) {
+  if (localStorage["chapterLink"]?.length) {
     document.querySelector(".input_chapter input").value = localStorage["chapterLink"];
 
     getChapter(localStorage["chapterLink"]);
   }
-  if (localStorage["commentsLink"].length != 0) {
+  if (localStorage["commentsLink"]?.length) {
     document.querySelector(".input_comment input").value = localStorage["commentsLink"];
 
     getComment(localStorage["commentsLink"]);
@@ -43,8 +43,8 @@ const selectWebsiteChapter = (link, html) => {
   if (link.includes("m.wuxiaworld.co")) {
     title = tempDiv.querySelector(".chapter-title").innerHTML;
     text = tempDiv.querySelector(".chapter-entity").innerHTML.replaceAll("<br><br>", "</p><p>");
-    prev = `${origin}/${tempDiv.querySelector(".reader-page a.prev").getAttribute("href")}`;
-    next = `${origin}/${tempDiv.querySelector(".reader-page a.next").getAttribute("href")}`;
+    prev = origin + tempDiv.querySelector(".reader-page a.prev").getAttribute("href");
+    next = origin + tempDiv.querySelector(".reader-page a.next").getAttribute("href");
   }
 
   if (link.includes("novelsrock.com")) {
